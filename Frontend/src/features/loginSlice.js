@@ -6,7 +6,7 @@ export const login = createAsyncThunk(
     const response = await fetch(`${import.meta.env.VITE_API_KEY}auth/login`, {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "application/json"
       },
       body: JSON.stringify({ email, password }),
     });
