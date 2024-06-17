@@ -8,7 +8,13 @@ const ConnectToMongo = require("./db");
 ConnectToMongo();
 
 app.use(express.json({ limit: "50mb" }));
-app.use(cors());
+app.use(cors(
+    {
+        origin: ["https://social-media-by-shilok-kumar.vercel.app"],
+        methods: ["POST", "GET","PUT","DELETE"],
+        credentials: true
+    }
+));
 app.use(express.json());
 
 app.use("/auth", require("./routes/auth"));
