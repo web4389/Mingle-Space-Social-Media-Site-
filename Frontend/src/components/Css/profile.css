@@ -1,0 +1,89 @@
+@media screen and (min-width: 470px) {
+  .profileCon {
+    padding: 0px 6px;
+  }
+}
+
+.profileContainer {
+  width: 260px;
+  background: rgb(39, 39, 39);
+  border-radius: 12px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.123);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+}
+
+.profileImage {
+  margin-top: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.6);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.textContainer {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.name {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+.desc {
+  font-size: 0.84em;
+  color: rgb(194, 194, 194);
+  letter-spacing: 0.2px;
+}
+.editInfo {
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  opacity: 0;
+}
+
+.profileContainer:hover {
+  background-color: rgb(45, 45, 45);
+  transition-duration: 0.3s;
+}
+
+.profileContainer:hover .editInfo {
+  opacity: 1;
+}
+
+.imgSubCon {
+  position: relative;
+}
+
+.imgSubCon .content {
+  position: absolute;
+  top: 80px;
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  color: #ffffff;
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@media screen and (max-width: 1024px) {
+  .editInfo {
+    opacity: 1;
+  }
+}
+
+.imgSubCon:hover .content {
+  opacity: 1;
+}
+.imgSubCon:hover .profileImage {
+  opacity: 0.3;
+}

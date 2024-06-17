@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "ROBOTO";
+  src: url(/src/assets/Fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "OPENSANS";
+  src: url(/src/assets/Fonts/OpenSans.ttf);
+}
