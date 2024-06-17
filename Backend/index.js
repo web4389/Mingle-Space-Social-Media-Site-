@@ -10,7 +10,7 @@ ConnectToMongo();
 app.use(express.json({ limit: "50mb" }));
 app.use(cors(
     {
-        origin: ["https://social-media-by-shilok-kumar.vercel.app"],
+        origin: ["https://social-media-by-shilok-kumar.vercel.app/"],
         methods: ["POST", "GET","PUT","DELETE"],
         credentials: true
     }
