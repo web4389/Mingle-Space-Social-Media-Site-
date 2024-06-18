@@ -7,7 +7,7 @@ app.use(bodyParser.urlencoded({ limit: "500000mb", extended: true }));
 const ConnectToMongo = require("./db");
 ConnectToMongo();
 
-app.use(express.json({ limit: "50mb" }));
+app.use(express.json({ limit: "500000mb" }));
 app.use(cors(
     {
         origin: '*'
