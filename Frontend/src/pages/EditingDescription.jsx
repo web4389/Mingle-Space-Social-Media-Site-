@@ -105,7 +105,7 @@ const EditingDescription = () => {
             />
           </div>
 
-          <Button value="Conform" apidata={apidata} />
+          <Button value="Confirm" apidata={apidata} />
         </form>
       </div>
     </div>
